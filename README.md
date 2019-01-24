@@ -15,6 +15,3 @@ Here are some sources that could be useful when creating a basic Github Page:
 * “Create your first Github Pages Website”
 ## Contributors
 Hi, I am Akhil Kumar Reddy Busireddy currently pursuing masters degree in Applied Computer Science  
-
-![picture alt](https://thumbs.mic.com/MWQwZTlmOTI4ZiMvT1JTWnNsMndTZVJnRDVDZjBMM1hNWk1YZm9FPS80Mng0Mjg6Mjk1OHgxOTE5LzgwMHg0NTAvZmlsdGVyczpmb3JtYXQoanBlZyk6cXVhbGl0eSg4MCkvaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3BvbGljeW1pYy1pbWFnZXMvZ2Zyb3A5dHoyajJwd3JoM2R2c3N3dWZmZHJueHQ4NW0xYXdqbnVoNzhmbWF2bmxieXdjbjllZmtreXE2OGNpaS5qcGc.jpg)
-
