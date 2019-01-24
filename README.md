@@ -1,4 +1,4 @@
 # aboutme
 ## Repository Link
-Markup : * Webpage link 
-         * Sources
+* Webpage link 
+* Sources
