@@ -11,3 +11,9 @@ This repository is created by me to get used to github in the development of web
 1. [Bootstrap](https://www.w3schools.com/bootstrap/default.asp):It is based on JavaScript framework helps to make responsive webpages
 1. [JavaScript](https://www.w3schools.com/js/): It is a programming language used in development of webpages.
 1. [Notepad++] 
+
+
+## Recommeded Resources
+1. [WordPress](https://wordpress.com/ "WordPress - homepage"): WordPress is a 'anyone can use' simplified website publishing program.
+1. [jQuery](https://jquery.com/ "jQuery - homepage"): jQuery is a JavaScript extension library.
+1. [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn)
