@@ -1,0 +1,66 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    /*min-height: 75rem;*/
+    padding-top: 4.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+a{
+    color: whitesmoke;
+}
+
+section {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: transparent;
+    border-radius: 1em;
+}
+input{
+    background-color: black;
+    color: white;
+}
+
+textarea{
+    background-color: black;
+    color: white;
+}
+
+.h1 {
+    color : whitesmoke;
+    background-color : transparent;    
+}
+
+.footer{
+    color: white;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 2em;
+    grid-column-start: col-start 2;
+  }
+
+#img-circle{
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+    align-content: center;
+}
+
+#profile{
+    background-color: transparent;
+}
+
+#video {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-top: -1em;
+}
+
+#links {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
