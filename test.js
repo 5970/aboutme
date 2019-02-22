@@ -5,7 +5,7 @@ function area(input1,input2){
     if(length<0||breadth<0){
         area=0;
 }
-else if(length>700||breadth>700){
+else if(length>400||breadth>400){
     area=0;
 }
 else{
