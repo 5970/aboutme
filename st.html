@@ -55,18 +55,55 @@
                 <h1>Area of Triangle</h1>
         
               <div class="container">
-                    <form name="myForm" onsubmit="myFunction()">
-                        Enter length: <input type="text" name="length" required><br>
-                        Enter breadth: <input type="text" name="breadth" required><br>
-                        <input type="submit" value="Submit">
-                      </form>
+                        Enter length: <input type="text" id="length" required><br><br>
+                        Enter breadth: <input type="text" id="breadth" required><br><br>
+                        <button type="button" id="clicker" class="btn btn-primary">Submit</button>
+                        <button type="button" id="wiper" class="btn btn-danger">Clear Storage</button>
+                       <p id="result"></p>
+                      
                       
                       <script>
-                      function myFunction() {
-                      var l = document.forms["myForm"]["length"].value;
-                      var b = document.forms["myForm"]["breadth"].value;
-                       window.alert("Area Of Your Given Triangle is : " + 0.5*l*b);
-                      }
+                      console.log('SCRIPT START')
+console.log('Declare event listeners .......................')
+
+window.addEventListener('load', (event) => {
+  console.log('  Starting initialization ')
+  if (localStorage.getItem('number1')) {
+    document.getElementById('length').value = parseInt(localStorage.number1)
+    console.log(`  Stored num1 = ${localStorage.number1}`)
+  }
+  if (localStorage.getItem('number2')) {
+    document.getElementById('breadth').value = parseInt(localStorage.number2)
+    console.log(`  Stored num2 = ${localStorage.number2}`)
+  }
+  console.log('  Finished initialization')
+})
+
+document.getElementById('clicker').addEventListener('click', () => {
+  console.log('  Starting clicker click handler')
+  const origCount = parseInt(localStorage.getItem('countOfClicks')) || 0
+  const i = parseInt(document.getElementById('length').value)
+  console.log('i=' + i)
+  const j = parseInt(document.getElementById('breadth').value)
+  console.log('j=' + j)
+  const ct = origCount + 1
+  const ans = 'your area is ' + i*j*0.5 + '. This has been run ' + ct + ' times.'
+  document.getElementById('result').innerHTML = ans
+  localStorage.setItem('countOfClicks', ct)  // define a string key to store + its value
+  localStorage.setItem('number1', i)
+  localStorage.setItem('number2', j)
+  console.log('  Finished clicker click handler')
+})
+
+document.getElementById('wiper').addEventListener('click', () => {
+  console.log('  Starting wiper click handler')
+  localStorage.removeItem('countOfClicks')
+  localStorage.removeItem('number1')
+  localStorage.removeItem('number2')
+  console.log('  Finished wiper click handler - localStorage entries removed')
+})
+
+console.log('SCRIPT END')
                       </script>
               </div>
 </section>
@@ -78,5 +115,15 @@
 <footer class="footer">
     &copy; 2019 Akhil Kumar Reddy Busireddy
 </footer>
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
 </body>
 </html>
